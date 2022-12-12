@@ -2,11 +2,11 @@ package day38_Inheritance.carTask;
 
 public class Car {
 
-    private String brand, model;
-    private int year;
-    private double price;
-    private String color;
-    private double miles;
+    public String brand, model;
+    public int year;
+    public double price;
+    public String color;
+    public double miles;
 
 
     public Car(String brand, String model, int year, double price, String color, double miles) {
@@ -18,7 +18,23 @@ public class Car {
         this.miles = miles;
     }
 
+    private void start(){
+        System.out.println(brand+ " "+ model + " is started");
+    }
+
+    private void drive(){
+        System.out.println(" driving "+ brand+ " "+ model );
+    }
 
 
-
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", miles=" + miles +
+                '}';
+    }
 }
