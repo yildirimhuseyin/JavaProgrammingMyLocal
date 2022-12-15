@@ -11,5 +11,13 @@ public class Toyota extends Car{
         System.out.println(brand+" "+ model+ " is reliable" );
     }
 
+    public void start(){ // this is a overriding method
+
+        System.out.println("Twist the key to ignition to start "+brand+ " "+ brand);
+
+    }
+
+
+
 
 }
