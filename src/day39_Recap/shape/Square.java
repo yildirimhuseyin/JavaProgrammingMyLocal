@@ -51,6 +51,6 @@ Square extends Shape:
 
 	area(): side * side
 	perimeter(): side * 4
-	toString(): side, area, perimeter
+	toString(): side, area, perimeterr
 
  */
