@@ -18,7 +18,7 @@ public class MorningWorkOut {
         System.out.println("------------------------------Pull up started-----------------------");
 
         for (int i = 1; i <=20 ; i++) {
-            System.out.print("\rPush up "+ i);
+            System.out.print("\rPull up "+ i);
             sleep(1.5);
         }
 
