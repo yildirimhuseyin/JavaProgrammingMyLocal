@@ -2,13 +2,13 @@ package day43_Absractions.car;
 
 public abstract class Car {
 
-    private final String make, model;
+    private final String brand, model;
     private String color;
     private final int year;
     private double price;
 
-    public Car(String make, String model, String color, int year, double price) {
-        this.make = make;
+    public Car(String brand, String model, String color, int year, double price) {
+        this.brand = brand;
         this.model = model;
         setColor(color);
         if (year < 1886){ // first car invested in 1886
@@ -25,7 +25,7 @@ public abstract class Car {
     }
 
     public String getMake() {
-        return make;
+        return brand;
     }
 
     public String getModel() {
@@ -62,7 +62,7 @@ public abstract class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "make='" + make + '\'' +
+                "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
@@ -73,7 +73,7 @@ public abstract class Car {
 /*
 Car Task:
 	abstract Car:
-		make, model, color, year, price....
+		brand, model, color, year, price....
 		start();
 		stop()
 
